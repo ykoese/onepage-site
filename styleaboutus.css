@@ -1,0 +1,28 @@
+/* styling for about us */
+body {
+  margin: 0;
+}
+.aboutus-Header {
+  background-color: rgb(255, 102, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+header h1 {
+  text-align: center;
+  color: blue;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 1%;
+  margin-top: 80px;
+}
+/* Clear floats after image containers */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: rgb(255, 102, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.logo img {
+  width: 50px;
+}
+
+.navbar {
+  /*  overflow: hidden;*/
+  float: right;
+}
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.img {
+  height: 100vh;
+  width: 50%;
+  float: left;
+}
+.writing {
+  float: left;
+  width: 50%;
+}
+
+.writing {
+  margin-top: 20%;
+}
+article h1,
+article p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.first-section::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.contact {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  background-color: dimgrey;
+  color: rgb(10, 53, 119);
+}
+footer {
+  background-color: rgb(255, 102, 0);
+  /*  position: fixed;*/
+  top: 50px;
+  width: 100%;
+  padding: 20px;
+  /* box-sizing: border-box; */
+}
+.logo1 img {
+  width: 50px;
+}
+.copy-right {
+  float: right;
+  padding-right: 80px;
+}
+.copy-right small {
+  display: inline-block;
+}

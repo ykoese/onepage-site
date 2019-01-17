@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+.contact-Header {
+  background-color: rgb(255, 102, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+header h1 {
+  text-align: center;
+  color: blue;
+}
+article {
+  margin-top: 10%;
+  padding-left: 10px;
+}
