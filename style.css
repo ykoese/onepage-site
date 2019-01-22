@@ -1,3 +1,6 @@
+html {
+  font-size: 10px;
+}
 body {
   margin: 0;
 }
@@ -8,6 +11,7 @@ header {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  font-size: 2em;
 }
 .logo img {
   width: 50px;
@@ -32,11 +36,12 @@ header {
 .writing {
   float: left;
   width: 50%;
+  font-size: 1.6em; 
+}
+.writing {
+margin-top: 20%;
 }
 
-.writing {
-  margin-top: 20%;
-}
 article h1,
 article p {
   padding-left: 20px;
@@ -47,28 +52,135 @@ article p {
   clear: both;
   display: block;
 }
-.contact {
+.contact-divided {
   margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 20px;
-  background-color: dimgrey;
-  color: rgb(10, 53, 119);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: 	#292c2f; 
+  color: rgb(138, 161, 195);
+  font-size: 1.6em;
 }
-footer {
+
+.contact-divided .contact-left,
+
+.contact-divided .contact-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Contact left */
+
+.contact-divided .contact-left {
+	width: 60%;
+  color: white;
+}
+
+/* The company logo */
+
+.contact-divided h3{
+	color:  white;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+  text-align: center;
+}
+
+
+
+/* Contact links */
+
+
+
+.contact-divided .contact-left i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.contact-divided .contact-left p {
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: left;
+	margin:0;
+}
+
+.contact-divided .contact-left p span {
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.contact-divided .contact-left p a{ 
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Contact Right */
+
+.contact-divided .contact-right{
+	width: 20%;
+}
+
+
+
+.contact-divided  .contact-icons{
+	margin-top: 25px;
+}
+
+.contact-divided  .contact-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+  background-color: #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Styling */
+.footer-divided{
   background-color: rgb(255, 102, 0);
-  /*  position: fixed;*/
-  top: 50px;
-  width: 100%;
-  padding: 20px;
-  /* box-sizing: border-box; */
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	/* padding: 30px 0px; makes too large*/
+  margin-top: 40px;
 }
-.logo1 img {
-  width: 50px;
+
+/* vertical align used to center vertically inline elements instead floating */
+.footer-divided .footer-left,
+.footer-divided .footer-right{
+	display: inline-block;
+ vertical-align: top; 
 }
-.copy-right {
-  float: right;
-  padding-right: 80px;
+
+/* Footer left */
+.footer-divided .footer-left a img { width: 50px;}
+
+/* I used width 50 for other element to put right */
+.footer-divided .footer-left{
+  width: 50%;
 }
-.copy-right small {
-  display: inline-block;
+
+.footer-divided .footer-company-name{
+	color:  blue;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+  padding-top:  40px;
 }
+
+/* Footer Right */
+
+.footer-divided .footer-right{
+	width: 40%;
+}	
+

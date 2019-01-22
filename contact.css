@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-Header h1 {
+    text-align: center;
 }
 .contact-Header {
   background-color: rgb(255, 102, 0);
@@ -8,11 +13,76 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-header h1 {
-  text-align: center;
-  color: blue;
+.contact-divided {
+    width: 100%;
+    /* box-sizing: border-box; */
+    margin: 0%;
+    
 }
-article {
-  margin-top: 10%;
-  padding-left: 10px;
+
+.contact-left {
+    float: left;
+    width: 70%;
+    height: 100px;
+    padding-left:20px;
+    margin-top: 80px;
+    
+}
+.contact-right {
+    float: right;
+    width: 30%;
+    padding-left:50px;
+    padding-right: 10px;
+    height: 50px; 
+    margin-top: 0;
+    vertical-align:middle;
+}
+.contact-divided::after {
+    content: "";
+  clear: both;
+  display: table;
+}
+.contact-divided .contact-left i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.contact-divided .contact-left p {
+	display: inline-block;
+	color: #ce0808;
+	/* margin:0; */
+}
+.contact-divided .contact-left p span {
+	/* display:block; */
+	font-weight: normal;
+	font-size:16px;
+	line-height:2;
+}
+
+.contact-divided .contact-left p a{ 
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Contact Right */
+
+.contact-divided  .contact-icons{
+	margin-top: 0px;
+}
+
+.contact-divided  .contact-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+  background-color: #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 0px;
 }
